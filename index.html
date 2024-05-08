@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <img src="images-2/logo.png" alt="" class="logo">
+        <ul id="menu-links">
+            <li> <a href="/">Home</a> </li>
+            <li> <a href="./service.html">Service</a> </li>
+            <li> <a href="">Projects</a> </li>
+            <li> <a href="">About Us</a></li>
+        </ul>
+        <button class="nav-btn">Get Started <img src="images-2/arrow-white.png" alt=""></button>
+
+        <img src="images-2/menu.png" alt="" class="menu-icon" onclick="toogleMenu()">
+    </nav>
+    <div class="header">
+        <div class="header-content">
+            <h1> <span>FREE</span> <br> <span>LANCER</span></h1>
+            <div class="btn-container">
+                <button class="btn-dark">Request call back <img src="images-2/phone.png" alt=""></button>
+                <button class="btn-light">Know more <img src="images-2/arrow-black.png" alt=""></button>
+            </div>
+            <p>Passionate UI/UX designer with 10+ years of experience.</p>
+        </div>
+
+        
+
+        <img src="images-2/user.png " alt="" class="user-img">
+    </div>
+
+    <script>
+        let menuLinks = document.getElementById('menu-links');
+
+        function toogleMenu() {
+            menuLinks.classList.toggle('show-menu');
+        }
+
+
+
+        let navbar = document.querySelector('nav');
+
+        window.onscroll = function () {
+            if (window.scrollY > 0) {
+                navbar.style.background = '#eefff9';
+            } else {
+                navbar.style.background = 'transparent'
+            }
+        }
+    </script>
+</body>
+
+</html>
